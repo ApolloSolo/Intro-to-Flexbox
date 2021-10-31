@@ -1,0 +1,75 @@
+*{box-sizing: border-box;}
+
+body{
+    margin: 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hero{
+    background-color: #23424a;
+}
+
+.container{
+    max-width: 100%;  
+    padding: 3rem;
+}
+
+.hero__text{
+    max-width: 50%;
+    color: azure;
+    font-size: 1.2rem;
+}
+
+.hero__text button{
+    background-color: aqua;
+    border: solid aqua 1px;
+    border-radius: 25px;
+    padding: .5rem 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+.row{
+    /*flex container*/
+    display: flex;
+    /*flex-direction: column;*/
+    padding: 1rem;
+    border: solid black 1px;
+    /*
+    The defult direction is row, which it is now. Setting display to flex has caused the child elements of .row,
+    which are div of class column, to line up in a row next to eachother(flex-direction-row). Border added
+    to help identify the parent   
+    */
+}
+
+.row h2{
+    text-align: center;
+}
+
+.column{
+    /*flex items*/
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: solid red 1px;
+    width: 100%;
+    /*
+    Individual child divs within the flex parent, seperated with borders to easily identify.
+    The flex items width is set by the content within the item. i.e. flex item would shrink if 
+    sentence was much smaller. We can est an ideal width to keep the auto sizing from shrinking items. 
+    */
+}
+
+.container-2{
+    background-color: #136A72;
+    color: azure;
+    text-align: center;
+    border: none;
+}
+
+/*Just to remove the beautiful borders we set on the above row and column classes*/
+.container-2 .row{
+    border: none;
+}
+.container-2 .row .column{
+    border: none;
+}
